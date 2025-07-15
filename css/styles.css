@@ -11005,10 +11005,6 @@ section.resume-section .resume-section-content {
   object-fit: contain;
   transition: transform 0.3s;
 }
-
 .custom-icon:hover {
   transform: scale(1.2);
 }
-
-
-
