@@ -11079,4 +11079,27 @@ section.resume-section .resume-section-content {
 .justify-text {
   text-align: justify;
 }
+.cert-img {
+  max-height: 410px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
 
+.cert-caption {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+@media (max-width: 576px) {
+  .cert-img {
+    max-height: 260px;
+    padding: 0 10px;
+  }
+
+  .cert-caption {
+    font-size: 1rem;
+  }
+}
