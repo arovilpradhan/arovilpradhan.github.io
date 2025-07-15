@@ -11008,3 +11008,55 @@ section.resume-section .resume-section-content {
 .custom-icon:hover {
   transform: scale(1.2);
 }
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badge {
+  background-color: #b2dfe8; /* Light cyan badge */
+  color: #004f58;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+
+.skill-badge:hover {
+  background-color: #007780;
+  color: #fff;
+}
+.skill-category {
+  font-size: 1.1rem;
+  margin: 2rem 0 0.75rem; /* Slightly reduced spacing */
+  color: #004f58;
+  font-weight: 600;
+  border-left: 4px solid #00b7d6;
+  padding-left: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.skill-badge {
+  background-color: #b2dfe8;
+  color: #004f58;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+
+.skill-badge:hover {
+  background-color: #007780;
+  color: #fff;
+}
