@@ -11060,3 +11060,19 @@ section.resume-section .resume-section-content {
   background-color: #007780;
   color: #fff;
 }
+.name-framed {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 10px solid #004f58;
+  border-top-left-radius: 1.8rem;   /* Rounded */
+  border-bottom-right-radius: 1.8rem; /* Rounded */
+  border-top-right-radius: 0;       /* Sharp */
+  border-bottom-left-radius: 0;     /* Sharp */
+  margin-bottom: 0.5rem;
+}
+
+.name-framed h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  color: #212529;
+}
