@@ -10985,6 +10985,7 @@ section.resume-section .resume-section-content {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .badge-gallery img {
@@ -10998,3 +10999,16 @@ section.resume-section .resume-section-content {
 .badge-gallery img:hover {
   transform: scale(1.05);
 }
+.custom-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.custom-icon:hover {
+  transform: scale(1.2);
+}
+
+
+

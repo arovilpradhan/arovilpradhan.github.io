@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Arovil Pradhan</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/images/ap_profile.jpg" alt="AP_Profile_Pic" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/images/ap_profile.png" alt="AP_Profile_Pic" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -52,12 +52,10 @@
                     <div class="social-icons">
                         <a class="social-icon" href="https://linkedin.com/in/arovil-pradhan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/arovilpradhan" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://tryhackme.com/p/GhostWarrior" target="_blank"><i class="fas fa-user-shield"></i></a>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b54348bd-1ded-49e0-80f6-40205b691b7c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="270865a1-87ba-4d8d-8f27-7b24bd44281e" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="015a9c33-9632-4630-997a-1c8dc2b7574e" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <a class="social-icon" href="https://tryhackme.com/p/GhostWarrior" target="_blank" rel="noopener noreferrer" title="TryHackMe">
+                          <img src="assets/icons/tryhackme-icon.png" alt="TryHackMe" class="custom-icon" />
+                        </a>
                     </div>
-                </div>
             </section>
             <hr class="m-0" />
             <!-- Skills -->
@@ -171,6 +169,8 @@
               <section class="resume-section" id="badges">
                 <div class="resume-section-content">
                   <h2 class="mb-5">Verified Badges</h2>
+
+                  <!-- Static badge images gallery -->
                   <div class="badge-gallery">
                     <img src="assets/images/badges/isc2_candidate_badge.png" alt="ISC2 Candidate Badge" />
                     <img src="assets/images/badges/fcf_intro_tl_badge.png" alt="FCF Intro to TL Badge" />
@@ -178,6 +178,17 @@
                     <img src="assets/images/badges/cisco_200_level_badge.png" alt="Cisco 200 Level Badge" />
                     <img src="assets/images/badges/ccna_r&s_badge.png" alt="CCNA Badge" />
                     <!-- Add more badges here -->
+                  </div>
+
+                  <!-- Live TryHackMe badge below the gallery -->
+                  <div class="thm-badge-container">
+                    <h3 style="margin-top: 2rem;">Live TryHackMe Badge</h3>
+                    <iframe 
+                      src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=587870"
+                      style="border: none; width: 400px; height: 120px;"
+                      loading="lazy"
+                      title="TryHackMe Badge">
+                    </iframe>
                   </div>
                 </div>
               </section>
