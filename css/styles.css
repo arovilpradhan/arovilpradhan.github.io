@@ -11079,40 +11079,37 @@ section.resume-section .resume-section-content {
 .justify-text {
   text-align: justify;
 }
-.cert-img {
-  max-height: 410px;
-  width: auto;
-  object-fit: contain;
+.cert-card, .badge-card {
+  overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.cert-caption {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #444;
+.cert-card:hover img,
+.badge-card:hover img {
+  transform: scale(1.07);
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 576px) {
-  .cert-img {
-    max-height: 260px;
-    padding: 0 10px;
-  }
-
-  .cert-caption {
-    font-size: 1rem;
-  }
-}
-.cert-img {
-  max-width: 100%;
+.cert-card img, .badge-card img {
+  border-radius: 12px;
+  width: 100%;
   height: auto;
-  max-height: 320px;
-  object-fit: contain;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
-.hover-shadow:hover {
-  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
-  transition: 0.3s ease-in-out;
+
+.nav-pills .nav-link {
+  background-color: #e9ecef;
+  color: #333;
+  margin: 0 5px;
+  border-radius: 25px;
+  padding: 8px 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
 }
