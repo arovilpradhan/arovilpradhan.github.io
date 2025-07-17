@@ -11112,3 +11112,7 @@ section.resume-section .resume-section-content {
   border: 1px solid #ddd;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
+.hover-shadow:hover {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+  transition: 0.3s ease-in-out;
+}
