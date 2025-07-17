@@ -5813,7 +5813,7 @@ textarea.form-control-lg {
   position: relative;
   display: none;
   float: left;
-  width: 100%;
+  width: 55%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -11102,4 +11102,13 @@ section.resume-section .resume-section-content {
   .cert-caption {
     font-size: 1rem;
   }
+}
+.cert-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
