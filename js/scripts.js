@@ -42,6 +42,26 @@ window.addEventListener('DOMContentLoaded', event => {
     modalImg.src = img.src;
   }
 
-  function closeModal() {
-    document.getElementById("certModal").style.display = "none";
+  // Prevent page scroll when carousel nav buttons are clicked
+document.querySelectorAll('.carousel__prev, .carousel__next').forEach(btn => {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetEl = document.querySelector(targetId);
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+  });
+});
+// === Autoplay for Certificates Carousel ===
+let currentSlide = 1;
+const totalSlides = document.querySelectorAll('.carousel__slide').length;
+
+setInterval(() => {
+  currentSlide = currentSlide < totalSlides ? currentSlide + 1 : 1;
+  const nextSlide = document.getElementById(`carousel__slide${currentSlide}`);
+  if (nextSlide) {
+    nextSlide.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
   }
+}, 5000); // 5000ms = 5 seconds
+
