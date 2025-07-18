@@ -36,7 +36,6 @@
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#badges">Badges</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -361,7 +360,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -370,101 +368,76 @@
     <section class="resume-section" id="certifications">
       <div class="resume-section-content">
         <h2 class="mb-4 text-center">Training & Achievements</h2>
-
         <!-- Tab Controls -->
         <ul class="nav nav-pills justify-content-center mb-4" id="certTabs" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="cert-tab" data-bs-toggle="pill" data-bs-target="#certificates"
-              type="button" role="tab">Certificates</button>
+            <button class="nav-link active" id="cert-tab" data-bs-toggle="pill" data-bs-target="#certificates" type="button" role="tab">Certificates</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="badge-tab" data-bs-toggle="pill" data-bs-target="#badges" type="button"
-              role="tab">Badges</button>
+            <button class="nav-link" id="badge-tab" data-bs-toggle="pill" data-bs-target="#badges" type="button" role="tab">Badges</button>
           </li>
         </ul>
-
         <!-- Tab Content -->
         <div class="tab-content" id="certTabsContent">
-          <!-- Certificates Tab -->
-          <div class="tab-pane fade show active" id="certificates" role="tabpanel">
-            <div class="cert-scroll-area">
-            <div class="row g-4">
-              <!-- Certificate Item -->
-              <div class="col-sm-6 col-md-4">
-                <div class="cert-card">
-                  <img src="assets/images/certs/1_mscit.png" alt="Certificate" class="img-fluid">
-                </div>
-              </div>
-              <!-- Certificate Item -->
-              <div class="col-sm-6 col-md-4">
-                <div class="cert-card">
-                  <img src="assets/images/certs/1_mscit.png" alt="Certificate" class="img-fluid">
-                </div>
-              </div>
-                            <!-- Certificate Item -->
-              <div class="col-sm-6 col-md-4">
-                <div class="cert-card">
-                  <img src="assets/images/certs/1_mscit.png" alt="Certificate" class="img-fluid">
-                </div>
-              </div>
-                            <!-- Certificate Item -->
-              <div class="col-sm-6 col-md-4">
-                <div class="cert-card">
-                  <img src="assets/images/certs/1_mscit.png" alt="Certificate" class="img-fluid">
-                </div>
-              </div>
-                            <!-- Certificate Item -->
-              <div class="col-sm-6 col-md-4">
-                <div class="cert-card">
-                  <img src="assets/images/certs/1_mscit.png" alt="Certificate" class="img-fluid">
-                </div>
-              </div>
-                            <!-- Certificate Item -->
-              <div class="col-sm-6 col-md-4">
-                <div class="cert-card">
-                  <img src="assets/images/certs/1_mscit.png" alt="Certificate" class="img-fluid">
-                </div>
-              </div>
-              <!-- Repeat cert items as needed -->
-            </div>
-          </div>
-</div>
-          <!-- Badges Tab -->
-          <div class="tab-pane fade" id="badges" role="tabpanel">
-            <div class="row g-4">
-              <!-- Badge Item -->
-              <div class="col-4 col-sm-3 col-md-2">
-                <div class="badge-card">
-                  <img src="assets/images/badges/isc2_candidate_badge.png" alt="ISC2 Candidate Badge" class="img-fluid">
-                </div>
-              </div>
-              <!-- Badge Item -->
-              <div class="col-4 col-sm-3 col-md-2">
-                <div class="badge-card">
-                  <img src="assets/images/badges/fcf_intro_tl_badge.png" alt="FCF Intro to TL Badge" class="img-fluid">
-                </div>
-              </div>
-              <!-- Badge Item -->
-              <div class="col-4 col-sm-3 col-md-2">
-                <div class="badge-card">
-                  <img src="assets/images/badges/itil_4_badge.png" alt="ITIL-4 ITSM Badge" class="img-fluid">
-                </div>
-              </div> <!-- Badge Item -->
-              <div class="col-4 col-sm-3 col-md-2">
-                <div class="badge-card">
-                  <img src="assets/images/badges/cisco_200_level_badge.png" alt="Cisco 200 Level Badge"
-                    class="img-fluid">
-                </div>
-              </div> <!-- Badge Item -->
-              <div class="col-4 col-sm-3 col-md-2">
-                <div class="badge-card">
-                  <img src="assets/images/badges/ccna_r&s_badge.png" alt="CCNA Badge" class="img-fluid">
-                </div>
-              </div>
-              <!-- Repeat badge items as needed -->
+        <!-- Certificates Tab -->
+        <div class="tab-pane fade show active" id="certificates" role="tabpanel">
+          <div class="d-flex justify-content-center">
+            <div class="carousel-wrapper">
+              <section class="carousel" aria-label="Certificates Carousel">
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/certs/1_mscit.png" alt="Certificate 1" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#carousel__slide4" class="carousel__prev">‹</a>
+                      <a href="#carousel__slide2" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/certs/10_hv_pinacle_award.png" alt="Certificate 2" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#carousel__slide1" class="carousel__prev">‹</a>
+                      <a href="#carousel__slide3" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <!-- Add more certs as needed -->
+                </ol>
+              </section>
             </div>
           </div>
         </div>
+        <!-- Badges Tab -->
+        <div class="tab-pane fade" id="badges" role="tabpanel">
+          <div class="row g-4 justify-content-center">
+            <div class="col-4 col-sm-3 col-md-2">
+              <div class="badge-card">
+                <img src="assets/images/badges/isc2_candidate_badge.png" alt="ISC2 Candidate Badge" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+              <div class="badge-card">
+                <img src="assets/images/badges/fcf_intro_tl_badge.png" alt="FCF Intro to TL Badge" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+              <div class="badge-card">
+                <img src="assets/images/badges/itil_4_badge.png" alt="ITIL-4 ITSM Badge" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+              <div class="badge-card">
+                <img src="assets/images/badges/cisco_200_level_badge.png" alt="Cisco 200 Level Badge" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2">
+              <div class="badge-card">
+                <img src="assets/images/badges/ccna_r&s_badge.png" alt="CCNA Badge" class="img-fluid">
+              </div>
+            </div>
+            <!-- Add more badges if needed -->
+          </div>
+        </div>
+      </div>
+      </div>
     </section>
     <hr class="m-0">
     <!-- Contact Section -->

@@ -11079,25 +11079,35 @@ section.resume-section .resume-section-content {
 .justify-text {
   text-align: justify;
 }
+/* Combined and cleaned CSS for certs carousel only — badges and training untouched */
+
 .cert-card, .badge-card {
   overflow: hidden;
+  border: 1px solid #dee2e6;
   border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.cert-card:hover img,
-.badge-card:hover img {
-  transform: scale(1.07);
-  transition: transform 0.3s ease;
+.cert-card:hover, .badge-card:hover {
+  transform: scale(1.03);
 }
 
 .cert-card img, .badge-card img {
+  display: block;
+  margin: 0 auto;
   border-radius: 12px;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+.cert-card:hover img, .badge-card:hover img {
+  transform: scale(1.07);
 }
 
 .nav-pills .nav-link {
@@ -11113,41 +11123,159 @@ section.resume-section .resume-section-content {
   background-color: #0d6efd;
   color: #fff;
 }
-.cert-card, .badge-card {
-  border: 1px solid #dee2e6;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  background-color: #fff;
-  transition: transform 0.2s ease;
+
+/* Cert Carousel Wrapper */
+#certCarousel {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.cert-card:hover, .badge-card:hover {
+.carousel-inner {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel__viewport {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.carousel__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.carousel__snapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 30%;
+  width: 40px;
+  height: 40px;
+   padding: 0;
+  z-index: 10;
+  text-decoration: none;
+  text-align: center;
+   line-height: 40px;
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+  background: #333;
+  color: #fff;
+}
+
+.carousel__prev {
+  left: 1em;
+}
+
+.carousel__next {
+  right: 1em;
+}
+
+.carousel__navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #bbb;
+  border-radius: 50%;
+  margin: 5px;
+  text-indent: -9999px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.carousel__navigation-button:focus,
+.carousel__navigation-button:hover {
+  background: #333;
+}
+
+/* Certificate Image Adjustments */
+.cert-img,
+.cert-slide-img {
+  max-height: 380px;
+  max-width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cert-slide-img:hover {
   transform: scale(1.03);
 }
-.cert-card img, .badge-card img {
+
+/* Modal Popup */
+.cert-modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.cert-modal-content {
+  margin: auto;
   display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-.cert-scroll-area {
-  max-height: 460px; /* Adjust height as needed */
-  overflow-y: auto;
-  padding-right: 10px; /* Optional: prevent scrollbar overlap */
-  margin-right: -10px; /* Compensate for padding */
+  max-width: 90%;
+  max-height: 90%;
 }
 
-/* Optional: Smooth scrollbar styling */
-.cert-scroll-area::-webkit-scrollbar {
-  width: 8px;
+.cert-close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
-
-.cert-scroll-area::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 4px;
-}
-
-.cert-scroll-area::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+/* Prevent height jump when toggling tabs */
+#certTabsContent {
+  min-height: 500px; /* adjust based on your badge/cert content */
+  transition: min-height 0.3s ease;
 }

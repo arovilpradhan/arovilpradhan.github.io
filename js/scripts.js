@@ -26,3 +26,22 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 });
+// Autoplay every 7 seconds
+  setInterval(() => {
+    const slides = document.querySelectorAll(".carousel__slide");
+    const active = [...slides].findIndex(slide => slide === document.activeElement);
+    const next = (active + 1) % slides.length;
+    slides[next].focus();
+  }, 7000);
+
+  // Modal Popup logic
+  function openModal(img) {
+    const modal = document.getElementById("certModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+  }
