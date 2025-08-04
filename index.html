@@ -129,10 +129,13 @@
             <span class="skill-badge">REST API (Basic Use)</span>
             <span class="skill-badge">Automation Scripts</span>
             <span class="skill-badge">Flask Integration (Assisted)</span>
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">Git</span>
           </div>
 
           <h4 class="skill-category">Cybersecurity Learning Paths</h4>
           <div class="skills-list">
+            <span class="skill-badge">TryHackMe: Pre Security</span>
             <span class="skill-badge">TryHackMe: Cybersecurity 101</span>
             <span class="skill-badge">TryHackMe: SOC Level 1</span>
             <span class="skill-badge">Fortinet FCF</span>
@@ -148,19 +151,10 @@
         <h2 class="mb-5">Professonal Experience</h2>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
           <div class="flex-grow-1">
-            <h3 class="mb-0">GDCS Engineer</h3>
+            <h3 class="mb-0">IT Infrastructure Engineer - Advanced</h3>
             <div class="subheading mb-2">Hitachi Vantara India Pvt Ltd, Hyderabad</div>
             <p class="justify-text">
-              In my current role, I support core infrastructure projects with a focus on enterprise monitoring and
-              vulnerability management. I manage Qualys VMDR dashboards (scanner-level access) to monitor
-              vulnerabilities across assigned assets and coordinate with the security team when escalated access or
-              configuration support is needed. Twice a month, I generate and share vulnerability reports — one in the
-              first week and another at month-end — for the Windows, Linux, and VMware teams to initiate patching. While
-              patching is handled by senior team members, I track progress, validate fixes, and ensure remediation is
-              reflected in updated reports. Additionally, I use Site24x7 for real-time infrastructure monitoring and
-              have developed Python scripts to automate tasks like monitor deletions and SolarWinds IP status updates.
-              These scripts are integrated with ServiceNow via REST APIs in collaboration with senior engineers,
-              contributing to a more streamlined monitoring and reporting workflow.
+              Previously, I supported core infrastructure initiatives with hands-on involvement in enterprise-level IT monitoring and vulnerability management tools. I managed and customized Qualys VMDR dashboards (scanner-level access) to monitor vulnerabilities across assigned assets. I also coordinated with the security team for escalation workflows, configuration support, and remediation tracking. As part of our regular cadence, I generated and shared bi-monthly vulnerability reports — one at the start and one at the end of each month — to help the Windows, Linux, and VMware teams initiate patching. While patching was handled by senior members, I tracked remediation status, validated fixes, and ensured the updated data was reflected in subsequent reports. On the monitoring side, I used Site24x7 for infrastructure health monitoring and explored third-party integrations to enhance observability. I also developed Python automation scripts to manage tasks like monitor deletions and SolarWinds IP status updates, which were integrated into ServiceNow via REST APIs in collaboration with senior engineers. These efforts contributed to a more streamlined and responsive monitoring and reporting workflow.
             </p>
             <p><strong>Tools:</strong> Qualys, SolarWinds, Site24x7, ServiceNow, Python, Excel, VS Code, Postman, PuTTY,
               PowerShell, KeepassXC, PAM (Privileged Access Management)</p>
@@ -341,221 +335,101 @@
       </div>
     </section>
     <hr class="m-0" />
-    <!-- Certifications & Badges Section -->
+    <!-- Training, Certification, Badge & Achievements Section -->
     <section class="resume-section" id="certifications">
       <div class="resume-section-content">
         <h2 class="mb-4 text-center">Training & Achievements</h2>
         <!-- Tab Controls -->
         <ul class="nav nav-pills justify-content-center mb-4" id="certTabs" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="cert-tab" data-bs-toggle="pill" data-bs-target="#certificates" type="button" role="tab">Certificates</button>
+            <button class="nav-link active" id="cert-tab" data-bs-toggle="pill" data-bs-target="#certificates" type="button" role="tab">Certifications</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="badge-tab" data-bs-toggle="pill" data-bs-target="#badges" type="button" role="tab">Badges</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-training-tab" data-bs-toggle="pill" data-bs-target="#pills-training" type="button" role="tab" aria-controls="pills-training" aria-selected="false">Training</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-achieve-tab" data-bs-toggle="pill" data-bs-target="#pills-achieve" type="button" role="tab" aria-controls="pills-achieve" aria-selected="false">Achievements</button>
+          </li>
         </ul>
         <!-- Tab Content -->
-        <div class="tab-content" id="certTabsContent">
+      <div class="tab-content" id="certTabsContent">
         <!-- Certificates Tab -->
         <div class="tab-pane fade show active" id="certificates" role="tabpanel">
           <div class="d-flex justify-content-center">
             <div class="carousel-wrapper">
               <section class="carousel" aria-label="Certificates Carousel">
                 <ol class="carousel__viewport">
-                  <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide1" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/26_az_900_cert.png" alt="Microsoft Azure Fundamentals Certified" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide28" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide2" class="carousel__next">›</a>
+                      <img src="assets/images/certs/fcf_in_cybersec_Certificate.png" alt="Fortinet Certifed Fudamentals in Cybersecurity" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide10" class="carousel__prev">‹</a>
+                      <a href="#cert__slide2" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide2" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/18_qualys_cert_vmdr.png" alt="Qualys Certified VMDR" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide1" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide3" class="carousel__next">›</a>
+                      <img src="assets/images/certs/az_900_cert.png" alt="Microsoft Azure Fundamentals CertifiedR" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide1" class="carousel__prev">‹</a>
+                      <a href="#cert__slide3" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide3" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/20_qualys_cert_qql.png" alt="Qualys Certified QQL" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide2" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide4" class="carousel__next">›</a>
+                      <img src="assets/images/certs/qualys_cert_admin_module.png" alt="Qualys Certified Administration Module" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide2" class="carousel__prev">‹</a>
+                      <a href="#cert__slide4" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide4" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/22_qualys_cert_admin_module.png" alt="Qualys Certified Administration Module" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide3" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide5" class="carousel__next">›</a>
+                      <img src="assets/images/certs/qualys_cert_qql.png" alt="Qualys Certified QQL" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide3" class="carousel__prev">‹</a>
+                      <a href="#cert__slide5" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide5" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/11_itil_4_cert.png" alt="ITIL-4 ITSM" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide4" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide6" class="carousel__next">›</a>
+                      <img src="assets/images/certs/qualys_cert_vmdr.png" alt="Qualys Certified VMDR" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide4" class="carousel__prev">‹</a>
+                      <a href="#cert__slide6" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide6" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide6" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/8_ccna_rs.png" alt="CCNA Routing & Switching" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide5" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide7" class="carousel__next">›</a>
+                      <img src="assets/images/certs/itil_4_cert.png" alt="ITIL-4 ITSM" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide5" class="carousel__prev">‹</a>
+                      <a href="#cert__slide7" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide7" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide7" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/9_nsd_cpt.png" alt="ISAC Certified Penetration Tester" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide6" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide8" class="carousel__next">›</a>
+                      <img src="assets/images/certs/nsd_cpt.png" alt="ISAC Certified Penetration Tester" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide6" class="carousel__prev">‹</a>
+                      <a href="#cert__slide8" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide8" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide8" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/3_nsd_associate_Cert.png" alt="ISAC Penetration Tester Associate Level" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide7" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide9" class="carousel__next">›</a>
+                      <img src="assets/images/certs/ccna_rs.png" alt="CCNA Routing & Switching" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide7" class="carousel__prev">‹</a>
+                      <a href="#cert__slide9" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide9" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide9" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/25_fcf_til_training.png" alt="Fortinet FCF-TI" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide8" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide10" class="carousel__next">›</a>
+                      <img src="assets/images/certs/cybrary_subnet_micro.png" alt="Cybrary Subnetting Micro-Cetificate" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide8" class="carousel__prev">‹</a>
+                      <a href="#cert__slide10" class="carousel__next">›</a>
                     </div>
                   </li>
-                  <li id="carousel__slide10" tabindex="0" class="carousel__slide">
+                  <li id="cert__slide10" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                      <img src="assets/images/certs/15_qualys_traininig_etp.png" alt="Qualys Training ETP" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide9" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide11" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide11" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/13_qualys_training_qsf.png" alt="Qualys Training Sensor Fundamentals" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide10" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide12" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide12" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/14_qualys_traininig_vm.png" alt="Qualys Training VM" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide11" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide13" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide13" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/16_qualys_training_vmdr.png" alt="Qualys Traininig VMDR" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide12" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide14" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide14" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/17_qualys_training_vmdr2.png" alt="Qualys VMDR Onboarding" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide13" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide15" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide15" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/19_qualys_training_qql.png" alt="Qualys Training QQL" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide14" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide16" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide16" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/21_qualys_training_admin_module.png" alt="Qualys Training Admin Module" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide15" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide17" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide17" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/12_sololearn_python_cert.png" alt="Sololearn Training Python" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide16" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide18" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide18" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/24_udemy_az_900_prep.png" alt="Udemy Training AZ-900" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide17" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide19" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide19" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/23_udemy_linux_bootcamp_training.png" alt="Udemy Traininig Linux" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide18" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide20" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide20" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/6_proact_traininig.png" alt="PCNA Training" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide19" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide21" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide21" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/10_hv_pinacle_award.png" alt="Hitachi Vantara Pincale Award" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide20" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide22" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide22" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/4_html_sololearn.jpg" alt="Sololearn Training HTML5" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide21" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide23" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide23" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/5_cybrary_subnet_micro.png" alt="Cybrary Micro Certificate Subnetting" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide22" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide24" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide24" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/2_itfact.png" alt="ITFACT CHN" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide23" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide25" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide25" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/7_4c_softskills.png" alt="4C SoftSkills Training" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide24" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide26" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide26" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/1_mscit.png" alt="MSCIT Certificate" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide25" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide27" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide27" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/27_fcf_get_cyber3.0_training.png" alt="FCF Getting Started in CyberSecurity 3.0 Certificate" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide26" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide28" class="carousel__next">›</a>
-                    </div>
-                  </li>
-                   <li id="carousel__slide28" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <img src="assets/images/certs/28_fcf_in_cybersec_Certificate.png" alt="FCF in Cybersecurity" class="cert-slide-img" onclick="openCertModal(this.src)">
-                      <a href="#carousel__slide27" class="carousel__prev">‹</a>
-                      <a href="#carousel__slide1" class="carousel__next">›</a>
+                      <img src="assets/images/certs/nsd_associate_Cert.png" alt=" ISAC Penetration Tester Associate Level" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#cert__slide9" class="carousel__prev">‹</a>
+                      <a href="#cert__slide1" class="carousel__next">›</a>
                     </div>
                   </li>
                 </ol>
@@ -599,7 +473,163 @@
             <!-- Add more badges if needed -->
           </div>
         </div>
-      </div>
+        <!--Training Tab-->
+         <div class="tab-pane fade show" id="pills-training" role="tabpanel">
+          <div class="d-flex justify-content-center">
+            <div class="carousel-wrapper">
+              <section class="carousel" aria-label="Certificates Carousel">
+                <ol class="carousel__viewport">
+                  <li id="training__slide1" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/fcf_get_cyber3.0_training.png" alt="FCF-Getting started in Cybersecurity 3.0" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide18" class="carousel__prev">‹</a>
+                      <a href="#training__slide2" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/fcf_til_training.png" alt="FCF-Introduction to Threat Landscape 3.0 " class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide1" class="carousel__prev">‹</a>
+                      <a href="#training__slide3" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide3" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/qualys_training_admin_module.png" alt="Qualys - Administration Module" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide2" class="carousel__prev">‹</a>
+                      <a href="#training__slide4" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide4" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/qualys_training_qql.png" alt="Qualys QQL" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide3" class="carousel__prev">‹</a>
+                      <a href="#training__slide5" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide5" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/qualys_training_vmdr2.png" alt="Qualys VMDR" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide4" class="carousel__prev">‹</a>
+                      <a href="#training__slide6" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide6" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/qualys_training_vmdr.png" alt="Qualys VMDR Onboarding" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide5" class="carousel__prev">‹</a>
+                      <a href="#training__slide7" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide7" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/qualys_traininig_etp.png" alt="Qualys Enterprise TruRisk Platform" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide6" class="carousel__prev">‹</a>
+                      <a href="#training__slide8" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide8" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/qualys_traininig_vm.png" alt="Qualys VM" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide7" class="carousel__prev">‹</a>
+                      <a href="#training__slide9" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide9" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/qualys_training_qsf.png" alt="Qualys Sensor Foundation" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide8" class="carousel__prev">‹</a>
+                      <a href="#training__slide10" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide10" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/udemy_az_900_prep.png" alt="Udemy AZ-900 Preparation" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide9" class="carousel__prev">‹</a>
+                      <a href="#training__slide11" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide11" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/udemy_linux_bootcamp_training.png" alt="Udemy Linux Bootcamp" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide10" class="carousel__prev">‹</a>
+                      <a href="#training__slide12" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide12" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/sololearn_python_cert.png" alt="Sololearn Python" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide11" class="carousel__prev">‹</a>
+                      <a href="#training__slide13" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide13" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/html_sololearn.jpg" alt="Sololearn HTML" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide12" class="carousel__prev">‹</a>
+                      <a href="#training__slide14" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide14" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/proact_traininig.png" alt="Proact PCNA" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide13" class="carousel__prev">‹</a>
+                      <a href="#training__slide15" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide15" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/itfact.png" alt="ITFACT CHNA" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide14" class="carousel__prev">‹</a>
+                      <a href="#training__slide16" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide16" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/4c_softskills.png" alt="4c Softskills" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide15" class="carousel__prev">‹</a>
+                      <a href="#training__slide17" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide17" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/mscit.png" alt="MKCL- MSCIT" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide16" class="carousel__prev">‹</a>
+                      <a href="#training__slide18" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                  <li id="training__slide18" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="assets/images/training/thm_presecurity.png" alt="TryHackMe Presecurity" class="cert-slide-img" onclick="openCertModal(this.src)">
+                      <a href="#training__slide17" class="carousel__prev">‹</a>
+                      <a href="#training__slide1" class="carousel__next">›</a>
+                    </div>
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!--Achievements Tab -->
+        <div class="tab-pane fade show" id="pills-achieve" role="tabpanel">
+                  <div class="d-flex justify-content-center">
+                    <div class="carousel-wrapper">
+                      <section class="carousel" aria-label="Certificates Carousel">
+                        <ol class="carousel__viewport">
+                          <li id="achieve__slide1" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper">
+                              <img src="assets/images/achievements/hv_pinacle_award.png" alt="HV Pinacle Award" class="cert-slide-img" onclick="openCertModal(this.src)">
+                              <a href="#achieve__slide1" class="carousel__prev">‹</a>
+                              <a href="#achieve__slide1" class="carousel__next">›</a>
+                            </div>
+                          </li>
+                        </ol>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+          <!--Tab content end's below-->
+        </div>
       </div>
     </section>
     <hr class="m-0">
